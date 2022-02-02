@@ -11,6 +11,17 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
     {% include bubbles.html %}
 
 
+    <script>
+      $('#videoModal').on('shown.bs.modal', function () {
+        $('#videoscrumlake')[0].play();
+      })
+      $('#videoModal').on('hidden.bs.modal', function () {
+        $('#videoscrumlake')[0].pause();
+      })
+    </script>
+
+
+
     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -19,7 +30,7 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
               <h4 class="modal-title" id="myModalLabel">Introduction to Scrum Lake</h4>
             </div>
             <div class="modal-body">
-                <video>
+                <video id="videoscrumlake">
                     <source src="images/scrumlake.mp4" type="video/mp4" width="100%" height="100%">
                     Your browser does not support HTML video.
                  </video>
