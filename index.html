@@ -53,12 +53,8 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
         </div>
         <div class="col-md-5">
             
-            <img src="images/scrumlakecanvas.png" class="img-fluid" alt="Scrum Lake Co-Creative Canvas" />
+            <img type="button" src="images/scrumlakecanvas.png" class="img-fluid btn btn-primary" alt="Scrum Lake Co-Creative Canvas" data-toggle="modal" data-target="#exampleModal" />
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
-            </button>
-            
         </div>
     </div>
 
@@ -116,3 +112,12 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
     </div>
 
 </div>
+
+
+<script>
+    $(document).ready(function(){
+        $('#Myimg').click(function(){
+              $('#Mymodal').modal('show')
+        });
+    });
+</script>
