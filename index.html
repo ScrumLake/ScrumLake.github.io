@@ -37,12 +37,14 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
 
       
     <script>
-        $('#videoModal').on('shown.bs.modal', function () {
-          $('#videoscrumlake')[0].play();
-        })
-        $('#videoModal').on('hidden.bs.modal', function () {
-          $('#videoscrumlake')[0].pause();
-        })
+        $(document).ready(function () {
+            $('#videoModal').on('shown.bs.modal', function () {
+                $('#videoscrumlake')[0].play();
+            })
+            $('#videoModal').on('hidden.bs.modal', function () {
+                $('#videoscrumlake')[0].pause();
+            })
+        }
       </script>
   
     
