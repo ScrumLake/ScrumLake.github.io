@@ -74,14 +74,14 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
 
-
     <script>
       $(document).ready(function () {
-
-        $('#lakeimage').click( function () {
-          $(this).hide();
-          $('#videoscrumlake').show();
-          $('#videoscrumlake')[0].play();
+          $('#videoModal').on('shown.bs.modal', function () {
+              $('#videoscrumlake')[0].play();
+          })
+          $('#videoModal').on('hidden.bs.modal', function () {
+              $('#videoscrumlake')[0].pause();
+          })
       });
 
     </script>
