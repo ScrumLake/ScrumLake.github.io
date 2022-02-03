@@ -77,13 +77,13 @@
 
     <script>
       $(document).ready(function () {
-          $('#videoModal').on('shown.bs.modal', function () {
-              $('#videoscrumlake')[0].play();
-          })
-          $('#videoModal').on('hidden.bs.modal', function () {
-              $('#videoscrumlake')[0].pause();
-          })
+
+        $('#lakeimage').click( function () {
+          $(this).hide();
+          $('#videoscrumlake').show();
+          $('#videoscrumlake')[0].play();
       });
+
     </script>
 
 </body>
