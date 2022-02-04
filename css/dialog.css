@@ -19,12 +19,7 @@ video {
 
 
 
-
-
-
-
-
-/* Container needed to position the button. Adjust the width as needed */
+/* lakecanvascontainer needed to position the button. Adjust the width as needed */
 .lakecanvascontainer {
   position: relative;
   width: 50%;
@@ -50,4 +45,8 @@ video {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.lakecanvascontainer .btn:hover {
+  background-color: black;
 }
