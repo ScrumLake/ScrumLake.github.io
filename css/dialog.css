@@ -9,3 +9,7 @@ font-weight: normal;
 color:#fff;
 opacity:1;
 }
+
+video {
+  object-fit: cover;
+}
