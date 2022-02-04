@@ -17,20 +17,6 @@ video {
 
 
 
-
-
-/* lakecanvascontainer needed to position the button. Adjust the width as needed */
-.lakecanvascontainer {
-  position: relative;
-  width: 50%;
-}
-
-/* Make the image responsive */
-.lakecanvascontainer img {
-  width: 100%;
-  height: auto;
-}
-
 /* Style the button and place it in the middle of the container/image */
 .lakecanvascontainer .btn {
   position: absolute;
