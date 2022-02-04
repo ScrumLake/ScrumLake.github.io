@@ -15,27 +15,20 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
     {% include bubbles.html %}
 
 
-
-
-
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-                <video id="videoscrumlake">
-                    <source src="images/scrumlake.mp4" width="400" type="video/mp4">
-                    Your browser does not support HTML video.
-                 </video>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>          
+              </div>
+              <div class="modal-body" style=" width:100%;">
+                <video id="player" width="400" controls>
+                  <source src="images/scrumlake.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    
-
-
 
     <div class="row featurette">
         
