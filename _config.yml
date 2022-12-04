@@ -5,8 +5,8 @@ navigation:
     url: /thestory
   - title: Your Facilitators
     url: /divemasters
-#  - title: Upcoming Workshops
-#    url: /workshops
+  - title: Upcoming Workshops
+    url: /workshops
 
 legal:
   - title: Privacy Policy
