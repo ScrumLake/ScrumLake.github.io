@@ -5,8 +5,10 @@ navigation:
     url: /thestory
   - title: Your Facilitators
     url: /divemasters
-  - title: Upcoming Workshops
-    url: /workshops
+  - title: What to Expect
+    url: /expect
+  - title: Book a Workshop 
+    url: /book
 
 legal:
   - title: Privacy Policy

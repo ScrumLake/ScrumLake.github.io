@@ -1,70 +1,22 @@
 ---
 layout: default
-title: Upcoming Workshops
-description: Scrum Lake - Our Upcoming Scrum Lake Workshops
+title: What to Expect
+description: Scrum Lake - What to Expect from a Scrum Lake Workshop
 ---
-
 
 <div class="container">
 
   <h1 class="display-4">{{page.title}}</h1>
 
-  <h2 class="featurette-heading">Dive into a
+  <h2 class="featurette-heading">What to Expect from a 
     <span class="text-muted"> Scrum Lake Workshop
     </span>
   </h2>
 
   <p>
-    Scrum Lake workshops are scheduled every few weeks, each workshop is unique owing to the diversity of attendees and
+    Scrum Lake workshops are scheduled every few months, each workshop is unique owing to the diversity of attendees and
     stories from around the World. You and your fellow divers will explore together.
   </p>
-
-  <h3>Immerse yourself in a Scrum Lake Workshop, and Dive much Deeper into Scrum</h1>
-  <p>For people interested in Scrum, Scrum Lake is a place to share stories, discuss techniques and take a deeper dive into Scrum theory, practice and reality. Our engaging workshops bring Scrum Masters and coaches from around the world to work together. Together, we deepen our understanding of Scrum through a shared experience.</p>
-  <p>In this two hour virtual workshop, the participants will choose where they want to explore as a group. Do they want to look at individual values and how these manifest? Do they want to dive into how transparency, inspection and adaptation build trust? Do they want to explore how empiricism and Lean thinking combine to form Scrum's DNA?&nbsp; Explore Artifacts, Events or Accountabilities much deeper than you ever thought was possible.&nbsp;Anything is possible in Scrum Lake, the route we take through the lake is decided on by the participants in the workshop, we Explore more deeply together.<br></p>
-  <p>These workshops are for everyone. The only requirement is that you have some involvement with Scrum's application. This can be as a developer, Scrum Master, Product Owner or stakeholder.</p>
-
-  <div class="card-deck mb-3">
-
-    {% for item in site.workshops %}
-
-    <div class="card mb-4 box-shadow">
-      <div class="card-body">
-
-        {% if item.eventidchk == '' %}
-
-          More Scrum Lake Events Coming Solutions
-
-          <img src="images/scrummarine.png" class="img-fluid" alt="A Scrum Team is like a submarine" />
-
-        {% else %}
-
-        <div class="tt-widget">
-          <div class="tt-widget-fallback">
-            <p>
-              <a href="https://www.tickettailor.com/checkout/new-session/{{ item.eventidchk }}/ref/website_widget"
-                target="_blank">Click here to buy tickets</a>
-              <br />
-              <small>
-                <a href="https://www.tickettailor.com?rf=wdg" class="tt-widget-powered">Sell tickets online with Ticket
-                  Tailor</a></small>
-            </p>
-          </div>
-          <script src="https://www.tickettailor.com/js/widgets/min/widget.js"
-            data-url="https://www.tickettailor.com/checkout/new-session/{{ item.eventidchk }}/ref/website_widget"
-            data-type="inline" data-inline-minimal="false" data-inline-show-logo="true"
-            data-inline-bg-fill="false"></script>
-        </div>
-
-
-        {% endif %}
-
-      </div>
-    </div>
-
-    {% endfor %}
-
-  </div>
 
   <div>
 
@@ -90,6 +42,51 @@ description: Scrum Lake - Our Upcoming Scrum Lake Workshops
   <hr>
   <p><em>The statements made and opinions expressed belong exclusively to the authors and are not necessarily shared by or represent the viewpoint of any official organisation. Scrum Lake does not constitute an endorsement of any product, service or point of view. We make no representations, warranties or assurances of any kind, express or implied, as to the completeness, accuracy, reliability, suitability, availability or currency of the content contained on this website. All images and content contained, unless expressly identified, are the property of its authors and may not be re-produced or re-used with prior written permission.</em></p>
 </div>
+
+
+<div class="card-deck mb-3">
+
+  {% for item in site.workshops %}
+
+  <div class="card mb-4 box-shadow">
+    <div class="card-body">
+
+      {% if item.eventidchk == '' %}
+
+        More Scrum Lake Events Coming Solutions
+
+        <img src="images/scrummarine.png" class="img-fluid" alt="A Scrum Team is like a submarine" />
+
+      {% else %}
+
+      <div class="tt-widget">
+        <div class="tt-widget-fallback">
+          <p>
+            <a href="https://www.tickettailor.com/checkout/new-session/{{ item.eventidchk }}/ref/website_widget"
+              target="_blank">Click here to buy tickets</a>
+            <br />
+            <small>
+              <a href="https://www.tickettailor.com?rf=wdg" class="tt-widget-powered">Sell tickets online with Ticket
+                Tailor</a></small>
+          </p>
+        </div>
+        <script src="https://www.tickettailor.com/js/widgets/min/widget.js"
+          data-url="https://www.tickettailor.com/checkout/new-session/{{ item.eventidchk }}/ref/website_widget"
+          data-type="inline" data-inline-minimal="false" data-inline-show-logo="true"
+          data-inline-bg-fill="false"></script>
+      </div>
+
+
+      {% endif %}
+
+    </div>
+  </div>
+
+  {% endfor %}
+
+</div>
+
+
 
 
   <p>
