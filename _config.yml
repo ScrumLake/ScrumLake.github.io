@@ -1,10 +1,10 @@
 navigation:
   - title: Scrum Lake
     url: /
-  - title: Your Facilitators
-    url: /divemasters
   - title: What to Expect
     url: /expect
+  - title: Your Facilitators
+    url: /divemasters
   - title: Book a Workshop 
     url: /book
 
