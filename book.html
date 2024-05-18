@@ -18,58 +18,6 @@ description: Scrum Lake - Book onto a Scrum Lake Workshop
     Reflect, Collaborate and Grow with a diverse and highly engaged group of Scrum Masters and Coaches from all across the world.
   </p>
 
-  <div class="card-deck mb-3">
-
-
-    {% for item in site.workshops %}
-
-    <div class="card mb-4 box-shadow">
-      <div class="card-body">
-
-        {% if item.eventidchk == '' %}
-
-          More Scrum Lake Events Coming Solutions
-
-          <img src="images/scrummarine.png" class="img-fluid" alt="A Scrum Team is like a submarine" />
-
-        {% else %}
-
-        <div class="tt-widget">
-          <div class="tt-widget-fallback">
-            <p>
-              <a href="https://www.tickettailor.com/checkout/new-session/{{ item.eventidchk }}/?ref=website_widget"
-                target="_blank">Click here to buy tickets</a>
-              <br />
-              <small>
-                <a href="https://www.tickettailor.com?rf=wdg" class="tt-widget-powered">Sell tickets online with Ticket
-                  Tailor</a></small>
-            </p>
-          </div>
-          <script src="https://www.tickettailor.com/js/widgets/min/widget.js"
-            data-url="https://www.tickettailor.com/checkout/new-session/{{ item.eventidchk }}/?ref=website_widget"
-            data-type="inline" data-inline-minimal="false" data-inline-show-logo="true"
-            data-inline-bg-fill="false"></script>
-        </div>
-
-
-        {% endif %}
-
-      </div>
-    </div>
-
-    {% endfor %}
-
-    <p>
-      Contact <a class="text-muted" href="mailto:sales@scrumlake.com">sales@scrumlake.com</a> if you would like to 
-      schedule a private remote facilitated Scrum Lake workshop for your organisation. Private workshops are perfect 
-      for Community of Practice, Groups of Scrum Masters and Coaches, Developers and Leaders.
-    </p>
-
-  </div>
-
-
   {% include book.html %}
-
-
 
 </div>
