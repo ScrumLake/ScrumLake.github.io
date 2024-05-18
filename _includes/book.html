@@ -1,24 +1,4 @@
----
-layout: default
-title: Upcoming Workshops
-description: Scrum Lake - Book onto a Scrum Lake Workshop
----
-
-
-<div class="container">
-
-  <h1 class="display-4">{{page.title}}</h1>
-
-  <h2 class="featurette-heading">Dive into the next
-    <span class="text-muted"> Scrum Lake Workshop
-    </span>
-  </h2>
-
-  <p>
-    Reflect, Collaborate and Grow with a diverse and highly engaged group of Scrum Masters and Coaches from all across the world.
-  </p>
-
-  <div class="card-deck mb-3">
+<div class="card-deck mb-3">
 
 
     {% for item in site.workshops %}
@@ -66,10 +46,3 @@ description: Scrum Lake - Book onto a Scrum Lake Workshop
     </p>
 
   </div>
-
-
-  {% include book.html %}
-
-
-
-</div>
