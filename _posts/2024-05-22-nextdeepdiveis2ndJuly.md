@@ -3,6 +3,7 @@ layout: post
 author: John Albrecht
 title: The Next Scrum Lake Deep Dive is on the 2nd July 2024
 tags: scrum scrummaster productowner agile coaching mentoring
+published: true
 ---
 
 ![our next workshop is on the 2nd July](\images\blog\2ndjuly24workshop.jpg)
